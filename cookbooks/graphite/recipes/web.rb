@@ -75,3 +75,10 @@ file "/opt/graphite/storage/graphite.db" do
   group "www-data"
   mode "644"
 end
+
+file "/opt/graphite/webapp/graphite/local_settings.py" do
+	owner "www-data"
+	group "www-data"
+  mode "644"
+  	content "TIME_ZONE = 'Pacific/Auckland'\n"
+end	
